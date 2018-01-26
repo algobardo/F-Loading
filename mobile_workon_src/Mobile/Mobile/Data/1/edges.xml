@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<EDGES>
+  <EDGE from="Node1" to="Node2">
+    <AND>
+
+        <Greater>
+          <P0 type="operation">
+            <Sum>
+              <P0 type="operation">
+                <Lenght>
+                  <P0 type="path">
+                    //Node1/Name
+                  </P0>
+                </Lenght>
+              </P0>
+              <P1 type="operation">
+                <Lenght>
+                  <P0 type="path">
+                    //Node1/Surname
+                  </P0>
+                </Lenght>
+              </P1>
+            </Sum>
+          </P0>
+          <P1 type="value">
+            <IntBox>
+              18
+            </IntBox>
+          </P1>
+        </Greater>
+
+    </AND>
+    
+  </EDGE>
+  <EDGE from="Node1" to="Node3">
+    <AND>
+    </AND>
+  </EDGE>
+</EDGES>

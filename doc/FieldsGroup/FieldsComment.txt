@@ -1,0 +1,48 @@
+---Come inserire valori all'interno del field (Utilizzabile da GUI)---
+
+Al momento della costruzione di un field, tramite una chiamata a GetInstance della classe FieldsManager,
+viene creata un'istanza di tipo XmlNode che viene associata alla proprietà Value del field stesso.
+Value rappresenta l'istanziazione dello schema XSD e la sua struttura corrisponde allo schema seguente:
+
+<NomeField>
+	<Campo1>Valore1</Campo1>
+	<Campo2>Valore2</Campo2>
+	...
+	<CampoN>ValoreN</CampoN>
+</NomeField>
+
+Dove "NomeField" è l'attributo "name" inserito all'interno dell'XmlSchemaElement che è stato fornito a GetInstance
+(quindi non "StringBox1" ma "Anni") "Campo1"..."CampoN" sono i delimitatori dei valori che caratterizzano il singolo field 
+(Per StringBox esiste un solo campo e si chiama Value, mentre probabilmente in GPSLocation ve ne saranno 2, 
+chiamati Latitude e Longitude).
+Non è necessario sapere il nome degli elementi per poter inserire Valore1..ValoreN, ma basta sapere 
+l'ordine in cui inserire gli elementi nell'XMLNode
+
+---Esempio di inserimento valori (valido sia per le StringBox che con altri tipi futuri)---
+XmlSchemaSet sch= .... ;
+XmlSchemaElement cons= ....;
+IField tipo = FieldsManager.GetInstance(scs,cons);
+XmlNode xmln=tipo.Value;
+foreach(XmlNode elm in xmln.ChildNodes)
+    elm.InnerText = "sss";
+tipo.Value=xmln;
+
+----Aspetti rilevanti----
+- 	il nodo XML non contiene l'intestazione di un documento XML, dato 
+	che i singoli nodi dovranno poi essere composti in un unico file per la validazione.
+	
+-	Il nodo Xml non viene validato direttamente con il setting di Value, ma deve essere effettuata una chiamata
+	al metodo IsValid contenuto nel Field hce effettuera' un controllo con i validatori presenti a livello 
+	server
+	
+-	Il nodo XML NON VIENE COMPILATO dato che 1) non ce n'è la necessità 2) Fields non mantiene collegamenti con lo 
+	schemaset utilizzato per la realizzazione dell'elemento 3)Comunque la compilazione verra' effettuata da
+	WorkFlow al termine dell'utilizzo del nodo insieme all'intero contenuto della form
+	
+
+Avvertenza:
+Se dovessero spuntare particolari necessita' dovute all'implementazione di features avanzate, è possibile che
+vengano effettuati cambiamenti, comunque non prima che ci sia una discussione con i gruppi coinvolti.
+	
+
+ 

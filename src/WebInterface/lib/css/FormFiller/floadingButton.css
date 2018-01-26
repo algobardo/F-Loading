@@ -1,0 +1,83 @@
+﻿.floading-button-normal
+{
+    color: white;
+    cursor: pointer;
+}
+.floading-button-disabled
+{
+    color: White;
+}
+
+.floading-button-left, .floading-button-clicked-left, .floading-button-over-left, .floading-button-disabled-left
+{
+    height: 27px;
+    padding: 0px;
+    width: 24px;
+    float: left;
+}
+.floading-button-right, .floading-button-clicked-right, .floading-button-over-right,  .floading-button-disabled-right
+{
+    height: 27px;
+    padding: 0px;
+    width: 24px;
+    float: left;
+}
+.floading-button-left
+{
+    background: url(../../image/floading-button-left.png) no-repeat;
+}
+.floading-button-right
+{
+    background: url(../../image/floading-button-right.png) no-repeat;
+}
+.floading-button-clicked-left
+{
+    background: url(../../image/floading-button-clicked-left.png) no-repeat;
+}
+.floading-button-clicked-right
+{
+    background: url(../../image/floading-button-clicked-right.png) no-repeat;
+}
+.floading-button-over-left
+{
+    background: url(../../image/floading-button-hover-left.png) no-repeat;
+}
+.floading-button-over-right
+{
+    background: url(../../image/floading-button-hover-right.png) no-repeat;
+}
+.floading-button-disabled-left
+{
+    background: url(../../image/floading-button-disabled-left.png) no-repeat;
+}
+.floading-button-disabled-right
+{
+    background: url(../../image/floading-button-disabled-right.png) no-repeat;
+}
+
+.floading-button-center, .floading-button-clicked-center, .floading-button-over-center, .floading-button-disabled-center
+{
+    height: 27px;
+    padding: 0px;
+    float: left;
+    width: auto;
+}
+
+.floading-button-center
+{    
+    background: url(../../image/floading-button-center.png) repeat-x;    
+}
+
+.floading-button-clicked-center
+{
+    background: url(../../image/floading-button-clicked-center.png) repeat-x;
+}
+
+.floading-button-over-center
+{
+    background: url(../../image/floading-button-hover-center.png) repeat-x;
+}
+.floading-button-disabled-center
+{
+    background: url(../../image/floading-button-disabled-center.png) repeat-x;
+}

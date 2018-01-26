@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BaseTypes"
+    targetNamespace="http://tempuri.org/BaseTypes.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/BaseTypes.xsd"
+    xmlns:mstns="http://tempuri.org/BaseTypes.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:complexType name="IntBox"/>
+  <xs:complexType name="StringBox"/>
+  <xs:complexType name="CheckBoxField" />
+  <xs:complexType name="Calendar" />
+</xs:schema>

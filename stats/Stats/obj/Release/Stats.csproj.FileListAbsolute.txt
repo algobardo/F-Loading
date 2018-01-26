@@ -1,0 +1,13 @@
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\bin\Release\Stats.exe
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\bin\Release\Stats.pdb
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\bin\Release\ZedGraph.dll
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.Form1.resources
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.Graphics.resources
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.Properties.Resources.resources
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.TreeSelection.resources
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.csproj.GenerateResource.Cache
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.exe
+C:\Documents and Settings\Ema\Documenti\Visual Studio 2008\Projects\floading\stats\Stats\obj\Release\Stats.pdb
+C:\inetpub\wwwroot\floading\stats\Stats\obj\Release\Stats.exe
+C:\inetpub\wwwroot\floading\stats\Stats\obj\Release\Stats.pdb

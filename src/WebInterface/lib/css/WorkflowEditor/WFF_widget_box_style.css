@@ -1,0 +1,323 @@
+#WFF_widget_list, #WFF_widget_list_static
+{
+    list-style-type: none;
+    overflow: visible;
+}
+
+ul, li
+{
+    list-style-type: none !important;
+}
+
+.WFF_widget_box_menu
+{
+	width: 180px;
+	text-align: left;
+}
+
+.WFF_empty_content
+{
+    margin: 10px 9px 0 9px;
+    background: url('WFF_img/WFF_bg_grid_square.gif') repeat #FFFFFF !important;
+}
+
+#WFF_empty
+{
+    cursor: default;
+}
+
+.WFF_widget_edit_area 
+{
+	height: 90%;
+	overflow: inherit;
+}
+
+/* --- background change when content added --- */
+.WFF_ui_added_content
+{
+	background: url('WFF_img/WFF_bg_grid_square.gif') repeat #FFFFFF;
+	border: solid 4px #F0F0F0;
+}
+
+.WFF_close-button
+{
+	background: url(WFF_img/WFF_close.png) no-repeat;
+	background-position: center;
+	margin: 0;
+    padding: 0;
+    display: inline;
+    cursor: pointer;
+}
+
+.WFF_widget_generic_button
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 0 10px 0;
+    width: 120px;
+    height: 40px;
+    z-index: 10;
+}
+
+.WFF_widget_mouseover
+{
+    background: #FFFFCC;
+    border: solid 2px #F0F0F0;
+    height: 36px !important;
+    width: 116px !important;
+    cursor: url(WFF_img/cursor.cur), pointer;
+}
+
+.WFF_button 
+{
+	height: 16px;
+	width: 150px;
+
+	background-repeat: no-repeat;
+	background-color: #7f86cc;
+	color: white;
+	font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: middle;
+    
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.WFE_createWorkflowButton  
+{
+    margin-top: 20px;
+}
+
+.WFG_button 
+{
+    padding: 3px;
+    width: 180px;
+	background-color: #7f86cc;
+	color: white;
+	font-weight: bold;
+	
+	border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+/* --- RENDERED BOXES --- */
+.WFF_label_box
+{
+	border: 0px;
+	background: transparent;
+	height: 30px;
+}
+
+.WFF_static_label_box
+{
+    border: 0px;
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.WFF_static_group_box, .WFF_radio_button_list
+{
+    border: 1px dotted Black;
+    background: transparent;
+    text-align: left;
+    font-weight: bold;
+}
+
+.WFF_static_group_box:hover
+{
+    /*background: #FCFCFC;*/
+}
+
+#status_error
+{
+    /*overflow: hidden !important;*/
+}
+
+div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
+	background-color: 		#f00;
+	color: 					#fff;
+	opacity: 				.75;
+	filter: 				alpha(opacity = 75);
+	zoom: 					5;
+	width: 					400px;
+	min-height:             0px;
+	height:                 28px;
+	max-height:             28px;
+	padding: 				1px;
+	margin-top: 			1px;
+	margin-bottom: 			1px;
+	font-family: 			Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 				12px;
+	text-align: 			left;
+	display: 				none;
+	-moz-border-radius: 	5px;
+	-webkit-border-radius:	5px;
+}
+
+
+.WFF_adjusted_margin_group
+{
+    width: 100%;
+    margin-left: 0px !important;
+    padding: 0px;
+}
+
+.WFF_added_element
+{    
+	display: inline;		
+}
+
+.WFF_element_block
+{
+    cursor: move;
+    min-width: 400px;
+    margin-left: 10%;
+    
+}
+
+.WFF_element_block:hover
+{
+    border: 1px dotted Gray;
+}
+
+.WFF_label_box, .WFF_ui_added_Calendar , .WFF_ui_added_StringBox, .WFF_ui_added_gpsbox, .WFF_ui_added_IntBox, .WFF_ui_added_CheckBoxField, .WFF_ui_added_VEMap, .WFF_ui_added_ColorPicker, .WFF_ui_added_RadioButtonList, .WFF_ui_added_GroupSequence, .WFF_ui_added_GroupChoice
+{
+	  font-weight: bolder;
+	  color: Gray !important;
+}
+
+.hiddenpanel
+{
+    display: none;
+}
+
+.WFF_added_element_container
+{
+    height: 30px;
+    display: inline;
+    cursor: move;
+}
+
+.WFF_preview_image
+{
+    vertical-align: middle;
+}
+
+.WFF_added_widget
+{
+    display: block;
+}
+
+.WFF_property_box_style
+{
+    background-color: #ddd;
+    color: #444;
+}
+
+.WFF_selected_field
+{
+    background: #FFFFCC;
+}
+
+.WFF_radio_control_plus, .WFF_radio_control_plus:hover, .WFF_radio_control_minus, .WFF_radio_control_minus:hover
+{
+    border: 0px;
+    width: 37px;
+    height: 21px;
+}
+
+.WFF_radio_control_plus
+{
+    background: url(WFF_img/Plus_button.png);
+}
+
+.WFF_radio_control_plus:hover
+{
+    background: url(WFF_img/Plus_button_hover.png);
+}
+
+
+.WFF_radio_control_minus
+{
+    background: url(WFF_img/Minus_button.png);
+}
+
+.WFF_radio_control_minus:hover
+{
+    background: url(WFF_img/Minus_button_hover.png);
+}
+
+.WFF_property_box_input
+{
+    background: #DDDDFF;
+    color: Black;
+}
+
+#WFF_accordion_widgets
+{
+    height: auto;
+    max-height: 496px;
+    width: 190px;
+    margin-top: 15px; 
+}
+
+.WFF_accordion_widgets_header
+{    
+    height: 25px;
+    background: #7d85cd;
+    color: White;
+}
+
+.WFF_accordion_widgets_active
+{
+    background: #FFFFCC;
+    font-weight: bolder;
+    color: Black;
+}
+
+.WFF_static_image_resized
+{
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid #0000ff;
+}
+
+.WFF_static_image_resized:hover
+{
+    /*
+    max-width: 100%;
+    max-height: 100%;
+    */
+}
+
+.WFF_accordion_widgets, .WFF_accordion_widgets_header
+{
+    overflow: visible !important;
+}
+
+.hover_droppable
+{
+    background: #ff00ff;
+}
+
+.success_message
+{
+    background: #00bb00 !important;
+}
+
+.verbose_message
+{
+    background: #bbbb00 !important;
+}
+
+.small_font
+{
+    font-size:xx-small;
+}

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82EA06BB-A121-4414-A0E3-CAD28D383F4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fields</RootNamespace>
+    <AssemblyName>Fields</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIB\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="CheckBox.cs" />
+    <Compile Include="ChoicePanel.cs" />
+    <Compile Include="ColorPicker.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ComplexElement.cs" />
+    <Compile Include="ComplexType.cs" />
+    <Compile Include="CustomImage.cs" />
+    <Compile Include="FieldsManager.cs" />
+    <Compile Include="FieldsTest.cs" />
+    <Compile Include="FiscalCode.cs" />
+    <Compile Include="IntBox.cs" />
+    <Compile Include="RadioButton.cs" />
+    <Compile Include="Rating.cs" />
+    <Compile Include="RepeaterPanel.cs" />
+    <Compile Include="StaticHtmlCode.cs" />
+    <Compile Include="StaticImage.cs" />
+    <Compile Include="StringBox.cs" />
+    <Compile Include="IField.cs" />
+    <Compile Include="NamedChoice.cs" />
+    <Compile Include="NamedSequence.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticText.cs" />
+    <Compile Include="TestResources.Designer.cs">
+      <DependentUpon>TestResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="VEMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ColorPicker.js" />
+    <EmbeddedResource Include="Resources\colorpicker_crosshairs.png" />
+    <EmbeddedResource Include="Resources\colorpicker_h.png" />
+    <EmbeddedResource Include="Resources\colorpicker_position.png" />
+    <EmbeddedResource Include="Resources\colorpicker_sv.png" />
+    <EmbeddedResource Include="Resources\pencil.png" />
+    <EmbeddedResource Include="Resources\VEMapScript.js" />
+    <EmbeddedResource Include="Resources\default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseTypes.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\calendar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\checkbox_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\colorpicker_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\default_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\intbox_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\radiobutton_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\stringbox_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\vemap_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\calendar_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\checkbox_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\colorpicker_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\default_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\intbox_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\radiobutton_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\stringbox_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\vemap_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Rating\StarEmpty.png" />
+    <EmbeddedResource Include="Rating\StarFilled.png" />
+    <EmbeddedResource Include="Rating\StarSaved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\calendar_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\checkbox_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\colorpicker_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\default_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\intbox_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\radiobutton_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\stringbox_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\vemap_preview_tooltip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\namedchoice_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\namedsequence_icon.png" />
+    <EmbeddedResource Include="images\staticimage_icon.png" />
+    <EmbeddedResource Include="images\statictext_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Rating\rating.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cpencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\rating_icon.png" />
+    <EmbeddedResource Include="images\rating_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\fiscalcode_icon.png" />
+    <EmbeddedResource Include="images\fiscalcode_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\staticcode_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

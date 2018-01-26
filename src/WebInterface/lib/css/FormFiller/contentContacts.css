@@ -1,0 +1,268 @@
+﻿#content-container
+{
+	font-size: 62.5%;
+	width: 1024px;
+	background: url('../../image/bg-main1.jpg') repeat-y right;
+}
+
+#content-border
+{
+	border: 1px solid #A7A7A7;
+	margin: 5px 40px 0px 0px;
+}
+fieldset  
+{
+    padding:0; 
+    border:0; 
+    margin-top:25px; 
+}
+		
+#users-contain   
+{
+    width: 350px; 
+    margin: 20px 0; 
+}
+#users-contain table  
+{
+    margin: 1em 0; 
+    border-collapse: collapse; 
+    width: 100%; 
+    }
+		
+#users-contain table td, div#users-contain table th  
+{
+    border: 1px solid #eee; 
+    padding: .6em 10px; 
+    text-align: left; 
+}
+
+#spinnerBackgroundCustom
+{
+    margin-top: -330px !important;
+	background: #cccccc;	
+	position: fixed;
+	display: none;
+	-opacity: 0.6;
+	-moz-opacity: 0.6;
+	z-index: 100000;
+}
+.ui-button 
+{
+    border-color:Navy; 
+    width:150px; 
+    height:30px;  
+    background: url('../../image/bg-main1.jpg'); 
+    outline: 0; 
+    margin:0; 
+    padding: .4em 1em .5em; 
+    text-decoration:none;  
+    cursor:pointer;  
+    position:relative; 
+    text-align: center; 
+ }
+ 
+.accordion_button
+{
+    background: transparent url(../../image/cestino10px.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+
+.accordion_button_removeContacts
+{
+    background: transparent url(../../image/removeContacts.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+
+.accordion_button_moveContacts
+{
+    background: transparent url(../../image/moveContacts.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+.button_import
+{
+    background: transparent url(../../image/importContacts.jpg) no-repeat;
+    border: 0px;
+    height:50px;
+    width:60px;
+    cursor:pointer;
+}
+
+.button_addgroup
+{
+    background: transparent url(../../image/support-group-icon.gif) no-repeat;
+    border: 0px;
+    height:50px;
+    width:60px;
+    cursor:pointer;
+}
+
+.button_returnback
+{
+    background: transparent url(../../image/back1.png) no-repeat;
+    border: 0px;
+    height:50px;
+    width:60px;
+    cursor:pointer;
+}
+
+.accordion_button_rename
+{
+    background: transparent url(../../image/renamew.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+
+.accordion_button_checkYes
+{
+    background: transparent url(../../image/checkYes.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+
+.accordion_button_checkNo
+{
+    background: transparent url(../../image/checkNo.png) no-repeat;
+    border: 0px;
+    float:right;
+    visibility:hidden;
+    margin-right:0px;
+    margin-top:-14px;
+    cursor:pointer;
+}
+
+#mainaccordion
+{
+    margin-top:-15px;
+    margin-left:10px; 
+    width:500px; 
+    height:300px;
+    padding: 10px 10px 10px 10px;    
+}
+
+#accordion
+{
+    overflow:hidden;
+    width:500px; 
+    height:300px; 
+}
+
+#slider
+{
+    height: 300px;
+    width: 7px;   
+    margin-left:510px; 
+    margin-top:-300px;
+    visibility:hidden;
+}
+
+.ui-dialog .ui-state-highlight, .ui-dialog .ui-state-error  
+{
+    padding: .3em;  
+}
+
+#contactsList 
+{
+   width: 350px; 
+   height: 290px; 
+   border-style: solid; 
+   border-width: 0.5px; 
+   overflow: auto; 
+   margin-left:380px; 
+   margin-top:6px;
+   margin-bottom:15px;
+}
+
+#cntLst 
+{
+   width: 350px; 
+   margin-left:390px; 
+   margin-top:-360px;
+}
+
+#groupsList
+{
+    border-style: solid; 
+    border-width: 0px; 
+    width: 350px; 
+    height: 290px; 
+    margin-left:10px;
+    margin-bottom:15px;
+}
+    
+#buttons
+{
+    margin-top:-270px;
+    margin-left:550px; 
+    height:270px;
+    font-size:medium;
+ 
+}
+#groupies
+    {
+    width: 350px; 
+    height: 310px;
+    }
+            
+#selectAll, #deSelectAll
+    {
+    margin: 15px 0 0 24px;
+    }
+        
+#download_contacts, #create_group, #remove_group, #rename_group, #remove_contacts, #move_contacts, #return_back 
+    {
+    margin: 20px 0 0 95px;
+    }
+    
+#return_back 
+    {
+    margin: 20px 0 0 24px;
+    }    
+    
+#imageLoading
+    {
+    margin: 0px 100px;
+    }
+    
+#selserv, #selgroup
+    {
+    width:200px;
+    }
+    
+#imageLoading1
+    {
+    margin: 50px 120px;
+    }
+    
+#bord, #movConts
+    {
+    overflow: auto; 
+    height: 178px;
+    }
+    
+#renGroup
+    {        
+    width:201px;
+    }

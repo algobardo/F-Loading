@@ -1,0 +1,214 @@
+﻿#UploadLogoFrame
+{
+    padding: 0px 20px;
+	display:none;
+	color:#666;
+	font-size:12px;
+	background: #ddd url( '../resources/toolbox_bg.gif' ) repeat-x;
+	border: solid 1px #333;
+	width: 350px;
+	height: 75px;
+	position: absolute;
+	z-index: 1000;
+	top: 100px;
+	left: 50%;
+	margin-left: -175px;
+}
+#UploadLogoFrame h2
+{
+    padding-top: 0px;
+    margin-top:2px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.closeLink
+{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    cursor:pointer;
+}
+#formHeaderContainer{
+    border: 0px;
+    height: 200px;
+}
+#imageContainer{
+    border: 0px;
+    height:auto;
+}
+#uploadTools
+{
+    border: solid 1px #333;
+    height: 27px;
+    width: 100%;
+    background: #ddd url( '../resources/toolbox_bg.gif' ) repeat-x;
+    display:block;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+#ctl00_contentHome_presenPanel
+{
+    margin-top: 20px;
+}
+#generalCustomizations
+{
+    border-bottom: solid 1px #a7a7a7;
+}
+#generalCustomizations h2
+{
+    background: #ddd url( '../resources/toolbox_bg.gif' ) repeat-x;
+    height: 26px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+#generalCustomizations from
+{
+    padding: 0;
+    font-family: Verdana;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+#generalCustomizations h4
+{
+    font-size: 0.9em;
+    font-weight:normal;
+    margin: 0px;
+    padding: 0px 7px 0px 7px;
+}
+#generalCustomizations ul
+{
+    list-style-type:none;
+    padding: 0px 5px 5px 10px;
+    margin-top: 0px;
+}
+#generalCustomizations label
+{
+    text-align:left; 
+    display:inline-block;
+    width: 130px;
+    padding: 2px 5px 2px 5px;
+}
+#generalCustomizations h3
+{
+    margin:2px 0px 5px 5px;
+}
+#fieldCustomization
+{
+    border-bottom: solid 1px #a7a7a7;
+}
+#fieldCustomization h2
+{
+    background: #ddd url( '../resources/toolbox_bg.gif' ) repeat-x;
+    height: 26px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-bottom: 0px;
+}
+.floaters
+{
+    display:inline-table;
+    width: 450px;
+}
+
+#ctl00_contentHome_formTitle
+{
+    font-size:25px;
+}
+
+
+
+
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	background: url( 'http://static.flowplayer.org/img/global/tabs.png' ) no-repeat -652px 0;
+	font-size:11px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	width: 111px;
+	text-align:center;	
+	text-decoration:none;
+	color:#000;
+	padding:0px;
+	margin:0px;	
+	position:relative;
+	top:1px;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -652px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -652px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+ul.tabs a.w1 			{ background-position: -519px 0; width:134px; }
+ul.tabs a.w1:hover 	{ background-position: -519px -31px; }
+ul.tabs a.w1.current { background-position: -519px -62px; }
+
+/* width 2 */
+ul.tabs a.w2 			{ background-position: -366px -0px; width:154px; }
+ul.tabs a.w2:hover 	{ background-position: -366px -31px; }
+ul.tabs a.w2.current { background-position: -366px -62px; }
+
+
+/* width 3 */
+ul.tabs a.w3 			{ background-position: -193px -0px; width:174px; }
+ul.tabs a.w3:hover 	{ background-position: -193px -31px; }
+ul.tabs a.w3.current { background-position: -193px -62px; }
+
+/* width 4 */
+ul.tabs a.w4 			{ background-position: -0px -0px; width:194px; }
+ul.tabs a.w4:hover 	{ background-position: -0px -31px; }
+ul.tabs a.w4.current { background-position: -0px -62px; }
+
+
+/* initially all panes are hidden */ 
+div.panes div.pane {
+	display:none;		
+}
+
+div.jGrowl div.growlfloading {
+	background-color: #828BD0;
+	-moz-border-radius: 	0px;
+	-webkit-border-radius:	0px;
+	width: 					280px;
+	height: auto;
+	overflow: 				hidden;
+}
+
+

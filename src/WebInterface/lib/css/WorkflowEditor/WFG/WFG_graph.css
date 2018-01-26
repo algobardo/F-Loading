@@ -1,0 +1,41 @@
+﻿.WFG_menu
+{
+	visibility:hidden; 
+	position:absolute; 
+	padding:5px; 
+	border:1px solid; 
+	margin:0px;
+	background:white;
+}
+
+.WFG_menu_ul
+{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+.WFG_menu_li
+{
+	list-style-type:none;
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+.WFG_menu_li:hover
+{
+	background-color: #b2b2fb;
+	color: White;
+}
+
+.WFG_menu_item
+{
+	text-decoration:none; 
+	color:Black;
+}
+
+.WFG_menu_item:visited
+{
+	color:Black;
+}

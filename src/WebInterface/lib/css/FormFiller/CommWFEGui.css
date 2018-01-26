@@ -1,0 +1,63 @@
+﻿.p
+{
+	margin:5px;
+}
+
+.contentOption
+{
+	margin: 5px 0px 0px 30px;
+}
+
+.field
+{
+	display: none;
+	margin: 5px 0px 0px 55px;
+}
+
+#box
+{
+	width: 100%;
+	height: 98%;
+}
+
+#boxDx
+{
+	width: 300px;
+	display: none;
+	height: auto;
+	border: solid 1px #009988;
+	//margin: -10px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+}
+
+#boxSx
+{
+	width: 300px;
+	padding: 0px 0px 0px 10px;
+	border: 1px solid #009988;
+	height: auto;
+}
+
+#boxPW
+{
+	width: 100%;
+	height: 98%;
+}
+
+#boxDxPW
+{
+	width: 300px;
+	display: none;
+	height: auto;
+	border: solid 1px #009988;
+	//margin: -10px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+}
+
+#boxSxPW
+{
+	width: 300px;
+	padding: 0px 0px 0px 10px;
+	border: 1px solid #009988;
+	height: auto;
+}

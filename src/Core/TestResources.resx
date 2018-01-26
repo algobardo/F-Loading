@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BaseTypes" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+
+&lt;xs:schema id="XMLSchema1"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+  &lt;xs:complexType name="IntBox"/&gt;
+  &lt;xs:complexType name="StringBox"/&gt;
+
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="BrowserTestState" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;WORKFLOW name="workflow_1"&gt;
+  
+  &lt;EDGES&gt;
+    &lt;EDGE from="workflow_1_node_2" to="workflow_1_node_3"&gt;
+      &lt;PRECONDITIONS/&gt;
+    &lt;/EDGE&gt;
+  
+    &lt;EDGE to="workflow_1_node_2"/&gt;
+    
+    &lt;EDGE from="workflow_1_node_3"/&gt;
+  
+  &lt;/EDGES&gt;
+  
+  &lt;NODES&gt;
+    &lt;workflow_1_node_1&gt;
+      &lt;SCHEMA&gt;
+        &lt;EXTENDEDTYPES/&gt;
+  
+        &lt;NODETYPE&gt;
+          &lt;xs:complexType name="workflow_1_node_1"&gt;
+            &lt;xs:sequence/&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/NODETYPE&gt;
+      
+      &lt;/SCHEMA&gt;
+      
+      &lt;RENDERING name="a" x="-107.01667480468745" y="67.26666870117185" width="50" height="50"/&gt;
+    &lt;/workflow_1_node_1&gt;
+    
+    &lt;workflow_1_node_2&gt;
+      &lt;SCHEMA&gt;
+        &lt;EXTENDEDTYPES/&gt;
+        &lt;NODETYPE&gt;
+          &lt;xs:complexType name="workflow_1_node_2"&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="Label0" type="IntBox0"/&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/NODETYPE&gt;
+      &lt;/SCHEMA&gt;
+      &lt;RENDERING name="b" x="110.98332519531255" y="107.26666870117185" width="50" height="50"/&gt;
+    
+    &lt;/workflow_1_node_2&gt;
+    
+    &lt;workflow_1_node_3&gt;
+      &lt;SCHEMA&gt;
+        &lt;EXTENDEDTYPES/&gt;
+        &lt;NODETYPE&gt;
+          &lt;xs:complexType name="workflow_1_node_3"&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="Label1" type="IntBox1"/&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/NODETYPE&gt;
+      &lt;/SCHEMA&gt;
+      &lt;RENDERING name="c" x="216.98332519531255" y="123.26666870117185" width="50" height="50"/&gt;
+    &lt;/workflow_1_node_3&gt;
+  &lt;/NODES&gt;
+&lt;/WORKFLOW&gt;</value>
+  </data>
+  <data name="EdgePreconditions" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+            &lt;Sum&gt;
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path" fieldType="StringBox"&gt;
+                    //Node1/Name
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+              &lt;P1 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"  fieldType="StringBox"&gt;
+                    //Node1/Surname
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P1&gt;
+            &lt;/Sum&gt;
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;18&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="IntboxTest" xml:space="preserve">
+    <value>&lt;TypesValue&gt;&lt;IntBox&gt;
+              &lt;Value&gt;18&lt;/Value&gt;
+            &lt;/IntBox&gt;&lt;/TypesValue&gt;</value>
+  </data>
+  <data name="Node1" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"    
+    elementFormDefault="qualified"   
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node1"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="Name" type="StringBox1"/&gt;
+      &lt;xs:element name="Surname" type="StringBox1"/&gt;
+
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node1Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node1&gt;
+&lt;Name&gt;
+&lt;Value&gt;Pinco&lt;/Value&gt;
+&lt;/Name&gt;
+&lt;Surname&gt;
+&lt;Value&gt;PallinoCognomeLungo&lt;/Value&gt;
+&lt;/Surname&gt;
+&lt;/Node1&gt;</value>
+  </data>
+  <data name="Node1Types" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1" 
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+
+  &lt;xs:complexType name="StringBox1"&gt;
+    &lt;xs:complexContent&gt;
+      &lt;xs:extension base="StringBox"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element name="Value" type="xs:string"/&gt;                 
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node2" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"
+    elementFormDefault="qualified"  
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node2"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="Birthday" type="Date"/&gt;
+
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node2Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node2&gt;
+&lt;Birthday&gt;
+&lt;Value&gt;12/12/1912&lt;/Value&gt;
+&lt;/Birthday&gt;
+&lt;/Node2&gt;</value>
+  </data>
+  <data name="Node2Types" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"   
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+
+  &lt;xs:complexType name="Date"&gt;
+    &lt;xs:complexContent&gt;
+      &lt;xs:extension base="StringBox"&gt;        
+        &lt;xs:sequence&gt;
+          &lt;xs:element name="Value"&gt;
+            &lt;xs:simpleType&gt;
+              &lt;xs:restriction base="xs:string"&gt;
+                &lt;xs:pattern value="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"/&gt;
+              &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+          &lt;/xs:element&gt;            
+        &lt;/xs:sequence&gt;        
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node3Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node3&gt;
+&lt;DataIscrizione&gt;
+&lt;Value&gt;12/12/2009&lt;/Value&gt;
+&lt;/DataIscrizione&gt;
+&lt;/Node3&gt;</value>
+  </data>
+  <data name="nodeRenderingExample" xml:space="preserve">
+    <value>&lt;workflow_1_node_1&gt;
+      &lt;SCHEMA&gt;
+        &lt;EXTENDEDTYPES&gt;
+          &lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox0"&gt;
+            &lt;xs:complexContent mixed="false"&gt;
+              &lt;xs:extension base="StringBox"&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Value" type="xs:string"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:extension&gt;
+            &lt;/xs:complexContent&gt;
+          &lt;/xs:complexType&gt;
+          &lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox1"&gt;
+            &lt;xs:complexContent mixed="false"&gt;
+              &lt;xs:extension base="StringBox"&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Value" type="xs:string"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:extension&gt;
+            &lt;/xs:complexContent&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/EXTENDEDTYPES&gt;
+        &lt;NODETYPE&gt;
+          &lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="workflow_1_node_1"&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element name="Name" type="StringBox0"/&gt;
+              &lt;xs:element name="Surname" type="StringBox1"/&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/NODETYPE&gt;
+      &lt;/SCHEMA&gt;
+      &lt;RENDERING name="asasasasas" x="108.98332519531255" y="48.26666870117185" width="100" height="100"&gt;
+        &lt;xs_complexType name="workflow_1_node_1"&gt;
+          &lt;xs_sequence&gt;
+            &lt;xs_element name="Name"&gt;
+              &lt;style&gt;
+                &lt;top&gt;67&lt;/top&gt;
+                &lt;left&gt;31&lt;/left&gt;
+              &lt;/style&gt;
+            &lt;/xs_element&gt;
+            &lt;xs_element name="Surname"&gt;
+              &lt;style&gt;
+                &lt;top&gt;117&lt;/top&gt;
+                &lt;left&gt;31&lt;/left&gt;
+              &lt;/style&gt;
+            &lt;/xs_element&gt;
+          &lt;/xs_sequence&gt;
+        &lt;/xs_complexType&gt;
+      &lt;/RENDERING&gt;
+    &lt;/workflow_1_node_1&gt;</value>
+  </data>
+  <data name="NotValidNode1" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node1&gt;
+&lt;Name&gt;
+&lt;Valuej&gt;Pinco&lt;/Valuej&gt;
+&lt;/Name&gt;
+&lt;Surname&gt;
+&lt;Value&gt;Pallino&lt;/Value&gt;
+&lt;/Surname&gt;
+&lt;/Node1&gt;</value>
+  </data>
+  <data name="Node3" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"
+    elementFormDefault="qualified"  
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node3"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="DataIscrizione" type="Date"/&gt;
+
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="EdgePreconditions1" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node1/Surname
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;7&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions2" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node1/Name
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;9&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="Node4" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"    
+    elementFormDefault="qualified"   
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node4"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="Via" type="StringBox1"/&gt;
+      &lt;xs:element name="Citta" type="StringBox1"/&gt;
+
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node4Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node4&gt;
+&lt;Via&gt;
+&lt;Value&gt;XXSettembre&lt;/Value&gt;
+&lt;/Via&gt;
+&lt;Citta&gt;
+&lt;Value&gt;Ponsacco&lt;/Value&gt;
+&lt;/Citta&gt;
+&lt;/Node4&gt;</value>
+  </data>
+  <data name="Node5" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"    
+    elementFormDefault="qualified"   
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node5"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="NomePadre" type="StringBox1"/&gt;
+
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node5Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node5&gt;
+&lt;NomePadre&gt;
+&lt;Value&gt;Asdrubale&lt;/Value&gt;
+&lt;/NomePadre&gt;
+&lt;/Node5&gt;</value>
+  </data>
+  <data name="Node6" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema id="XMLSchema1"    
+    elementFormDefault="qualified"   
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+&lt;xs:complexType name="Node6"&gt;
+    &lt;xs:sequence&gt;
+
+      &lt;xs:element name="NomeFiglio1" type="StringBox1"/&gt;
+      &lt;xs:element name="NomeFiglio2" type="StringBox1"/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="Node6Compiled" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;Node6&gt;
+&lt;NomeFiglio1&gt;
+&lt;Value&gt;Marameo&lt;/Value&gt;
+&lt;/NomeFiglio1&gt;
+&lt;NomeFiglio2&gt;
+&lt;Value&gt;TopoGigio&lt;/Value&gt;
+&lt;/NomeFiglio2&gt;
+&lt;/Node6&gt;</value>
+  </data>
+  <data name="EdgePreconditions3" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+          &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions4" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+          &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions5" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+            &lt;Substraction&gt;
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node6/NomeFiglio2
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+              &lt;P1 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node6/NomeFiglio1
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P1&gt;
+            &lt;/Substraction&gt;
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;0&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions6" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+          &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions7" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+            &lt;Substraction&gt;
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node6/NomeFiglio1
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+              &lt;P1 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node6/NomeFiglio2
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P1&gt;
+            &lt;/Substraction&gt;
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;0&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions8" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node5/NomePadre
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;10&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="EdgePreconditions9" xml:space="preserve">
+    <value>&lt;PRECONDITIONS&gt;
+      &lt;AND&gt;
+
+        &lt;Greater&gt;
+          &lt;P0 type="operation"&gt;
+
+              &lt;P0 type="operation"&gt;
+                &lt;Length&gt;
+                  &lt;P0 type="path"&gt;
+                    //Node5/NomePadre
+                  &lt;/P0&gt;
+                &lt;/Length&gt;
+              &lt;/P0&gt;
+
+          &lt;/P0&gt;
+          &lt;P1 type="value"&gt;
+            &lt;IntBox&gt;
+              &lt;Value&gt;5&lt;/Value&gt;
+            &lt;/IntBox&gt;
+          &lt;/P1&gt;
+        &lt;/Greater&gt;
+
+      &lt;/AND&gt;
+    &lt;/PRECONDITIONS&gt;</value>
+  </data>
+  <data name="NodeWithComplexTypeRendering" xml:space="preserve">
+    <value>&lt;xs_complexType name="Nodo1"  &gt;
+    &lt;xs_sequence&gt;
+      &lt;xs_element name="Name"/&gt;
+      &lt;xs_element name="Surname"/&gt;
+
+      &lt;xs_sequence&gt;
+        &lt;xs_element name="NameOnTheCitofon"/&gt;
+        &lt;xs_choice&gt;
+
+          &lt;xs_element name="ItalianAddress"&gt;
+            &lt;xs_complexType&gt;
+              &lt;xs_sequence&gt;
+                &lt;xs_element name="Address"/&gt;
+
+              &lt;/xs_sequence&gt;
+            &lt;/xs_complexType&gt;
+          &lt;/xs_element&gt;
+
+          &lt;xs_element name="AmericanAddress"&gt;
+            &lt;xs_complexType&gt;
+              &lt;xs_sequence&gt;
+                &lt;xs_element name="Address"/&gt;
+                &lt;xs_element name="State"/&gt;
+              &lt;/xs_sequence&gt;
+            &lt;/xs_complexType&gt;
+          &lt;/xs_element&gt;
+
+        &lt;/xs_choice&gt;
+      &lt;/xs_sequence&gt;
+    &lt;/xs_sequence&gt;
+  &lt;/xs_complexType&gt;</value>
+  </data>
+  <data name="NodeWithComplexTypesSchema" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+
+  &lt;xs:complexType name="StringBox0"&gt;
+    &lt;xs:complexContent&gt;
+      &lt;xs:extension base="StringBox"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element name="Value" type="xs:string"/&gt;                 
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+
+
+
+  &lt;xs:complexType name="Nodo1"  &gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name="Name" type="StringBox0"/&gt;
+      &lt;xs:element name="Surname" type="StringBox0" maxOccurs="10"/&gt;
+
+      &lt;xs:sequence minOccurs="1" maxOccurs="2"&gt;
+        &lt;xs:element name="NameOnTheCitofon" type="StringBox0"/&gt;
+        &lt;xs:choice&gt;
+
+          &lt;xs:element name="ItalianAddress"&gt;
+            &lt;xs:complexType&gt;
+              &lt;xs:sequence&gt;
+                &lt;xs:element name="Address" type="StringBox0"/&gt;
+
+              &lt;/xs:sequence&gt;
+            &lt;/xs:complexType&gt;
+          &lt;/xs:element&gt;
+
+          &lt;xs:element name="AmericanAddress"&gt;
+            &lt;xs:complexType&gt;
+              &lt;xs:sequence&gt;
+                &lt;xs:element name="Address" type="StringBox0"/&gt;
+                &lt;xs:element name="State" type="StringBox0"/&gt;
+              &lt;/xs:sequence&gt;
+            &lt;/xs:complexType&gt;
+          &lt;/xs:element&gt;
+
+        &lt;/xs:choice&gt;
+      &lt;/xs:sequence&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  
+&lt;/xs:schema&gt;</value>
+  </data>
+  <data name="NodeWithComplexTypeRendering2" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;a&gt;
+  &lt;xs_complexType name="Nodo1"  &gt;
+    &lt;xs_sequence&gt;
+      &lt;xs_element name="Name" /&gt;
+      &lt;xs_element name="Surname" /&gt;
+ &lt;xs_element name="scelta"&gt;
+&lt;xs_complexType&gt;
+&lt;xs_choice&gt;
+      &lt;xs_element name="AddressA" type="StringBox0"/&gt;
+      &lt;xs_element name="AddressB" type="StringBox0"/&gt;
+&lt;/xs_choice&gt;
+&lt;/xs_complexType&gt;
+&lt;/xs_element&gt;
+      &lt;xs_element name="AddressInfo" maxOccurs="10"&gt;
+
+        &lt;xs_complexType&gt;
+          &lt;xs_choice&gt;
+            &lt;xs_element name="ItalianAddress"&gt;
+
+              &lt;xs_complexType&gt;
+                &lt;xs_sequence&gt;
+                  &lt;xs_element name="Address" /&gt;
+                &lt;/xs_sequence&gt;
+              &lt;/xs_complexType&gt;
+            &lt;/xs_element&gt;
+            &lt;xs_element name="AmericanAddress"&gt;
+
+              &lt;xs_complexType&gt;
+                &lt;xs_sequence&gt;
+                  &lt;xs_element name="Address" /&gt;
+
+                  &lt;xs_element name="State" /&gt;
+                &lt;/xs_sequence&gt;
+              &lt;/xs_complexType&gt;
+            &lt;/xs_element&gt;
+          &lt;/xs_choice&gt;
+        &lt;/xs_complexType&gt;
+      &lt;/xs_element&gt;
+
+      &lt;xs_element name="OfficeAddressInfo" maxOccurs="10"&gt;
+
+        &lt;xs_complexType&gt;
+          &lt;xs_choice&gt;
+            &lt;xs_element name="Choice"&gt;
+
+              &lt;xs_complexType&gt;
+                &lt;xs_sequence&gt;
+                  &lt;xs_element name="Address" /&gt;
+                &lt;/xs_sequence&gt;
+              &lt;/xs_complexType&gt;
+            &lt;/xs_element&gt;
+            &lt;xs_element name="AmericanAddress"&gt;
+
+              &lt;xs_complexType&gt;
+                &lt;xs_sequence&gt;
+                  &lt;xs_element name="Address" /&gt;
+
+                  &lt;xs_element name="State" /&gt;
+                &lt;/xs_sequence&gt;
+              &lt;/xs_complexType&gt;
+            &lt;/xs_element&gt;
+          &lt;/xs_choice&gt;
+        &lt;/xs_complexType&gt;
+      &lt;/xs_element&gt;
+
+    &lt;/xs_sequence&gt;
+
+  &lt;/xs_complexType&gt;
+&lt;/a&gt;</value>
+  </data>
+  <data name="NodeWithComplexTypeSchema2" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+&gt;
+
+  &lt;xs:complexType name="StringBox0"&gt;
+    &lt;xs:complexContent&gt;
+      &lt;xs:extension base="StringBox"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element name="Value" type="xs:string"/&gt;
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+
+
+
+  &lt;xs:complexType name="Nodo1"  &gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name="Name" type="StringBox0"/&gt;
+      &lt;xs:element name="Surname" type="StringBox0"/&gt;
+&lt;xs:element name="scelta"&gt;
+&lt;xs:complexType&gt;
+&lt;xs:choice&gt;
+      &lt;xs:element name="AddressA" type="StringBox0"/&gt;
+      &lt;xs:element name="AddressB" type="StringBox0"/&gt;
+&lt;/xs:choice&gt;
+&lt;/xs:complexType&gt;
+&lt;/xs:element&gt;
+     
+     
+      &lt;xs:element name="AddressInfo" maxOccurs="10"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:choice&gt;
+            &lt;xs:element name="ItalianAddress"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Address" type="StringBox0"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="AmericanAddress"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Address" type="StringBox0"/&gt;
+
+                  &lt;xs:element name="State" type="StringBox0"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+          &lt;/xs:choice&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+   
+      &lt;xs:element name="OfficeAddressInfo" maxOccurs="10"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:choice&gt;
+            &lt;xs:element name="Choice"&gt;
+
+              &lt;xs:complexType&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Address" type="StringBox0"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="AmericanAddress"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:sequence&gt;
+                  &lt;xs:element name="Address" type="StringBox0"/&gt;
+
+                  &lt;xs:element name="State" type="StringBox0"/&gt;
+                &lt;/xs:sequence&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+          &lt;/xs:choice&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      
+    &lt;/xs:sequence&gt;
+
+  &lt;/xs:complexType&gt;
+
+&lt;/xs:schema&gt;</value>
+  </data>
+</root>

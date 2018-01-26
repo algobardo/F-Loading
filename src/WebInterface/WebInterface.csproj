@@ -1,0 +1,628 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19DB1708-582F-446B-A151-BABEDD068374}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebInterface</RootNamespace>
+    <AssemblyName>WebInterface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIB\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.0.9122, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThemeEditor\CssUpload.aspx" />
+    <Content Include="lib\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="lib\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="lib\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="lib\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="lib\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="lib\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="lib\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="lib\css\smoothness\jquery-ui-1.7.1.custom.css" />
+    <Content Include="lib\js\jquery-1.3.2.min-vsdoc.js" />
+    <Content Include="lib\js\jquery-1.3.2.min.js" />
+    <Content Include="lib\js\jquery-ui-1.7.1.custom.min.js" />
+    <Content Include="ThemeEditor\css\toolbox.css" />
+    <Content Include="ThemeEditor\lib\toolbox.js" />
+    <Content Include="ThemeEditor\resources\102.png" />
+    <Content Include="ThemeEditor\resources\toolbox_bg.gif" />
+    <Content Include="Web.config" />
+    <Content Include="ThemeEditor\CssEdit.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\httpslogin.aspx.cs">
+      <DependentUpon>httpslogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\httpslogin.aspx.designer.cs">
+      <DependentUpon>httpslogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommWeb\RSSResult.aspx.cs">
+      <DependentUpon>RSSResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommWeb\RSSResult.aspx.designer.cs">
+      <DependentUpon>RSSResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommWeb\ViewPublicationResult.aspx.cs">
+      <DependentUpon>ViewPublicationResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommWeb\ViewPublicationResult.aspx.designer.cs">
+      <DependentUpon>ViewPublicationResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FloadingButton.cs" />
+    <Compile Include="FormFillier\action\CommInformation.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\AddContactsInGroup.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\UrlRet.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\GetGroupsAndContacts.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\GetServices.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\RemoveContacts.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\MoveContacts.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\RemoveGroup.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\CreateGroup.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\ImportContacts.cs" />
+    <Compile Include="FormFillier\action\ContactsManager\RenameGroup.cs" />
+    <Compile Include="FormFillier\action\ContactsRetrieve.cs" />
+    <Compile Include="FormFillier\action\CreateUri.cs" />
+    <Compile Include="FormFillier\action\CreateUriPW.cs" />
+    <Compile Include="FormFillier\action\EditModel.cs" />
+    <Compile Include="FormFillier\action\EditTheme.cs" />
+    <Compile Include="FormFillier\action\ExportResult.cs" />
+    <Compile Include="FormFillier\action\GroupSelectionToSend.cs" />
+    <Compile Include="FormFillier\action\IControlFormFiller.cs" />
+    <Compile Include="FormFillier\action\IdModelAuthServiceRetrieve.cs" />
+    <Compile Include="FormFillier\action\Logout.cs" />
+    <Compile Include="FormFillier\action\PublicWFRetrieve.cs" />
+    <Compile Include="FormFillier\action\PublishWf.cs" />
+    <Compile Include="FormFillier\action\RemoveModel.cs" />
+    <Compile Include="FormFillier\action\RemovePublication.cs" />
+    <Compile Include="FormFillier\action\ResultRetrieve.cs" />
+    <Compile Include="FormFillier\action\ServiceFakeLog.cs" />
+    <Compile Include="FormFillier\action\ServiceFieldPWRetrieve.cs" />
+    <Compile Include="FormFillier\action\ServiceFieldRetrieve.cs" />
+    <Compile Include="FormFillier\action\UserWorkflowSend.cs" />
+    <Compile Include="FormFillier\action\WorkflowRetrieve.cs" />
+    <Compile Include="FormFillier\action\WorkflowSelection.cs" />
+    <Compile Include="FormFillier\action\CommInformationPW.cs" />
+    <Compile Include="FormFillier\Filling.aspx.cs">
+      <DependentUpon>Filling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\Filling.aspx.designer.cs">
+      <DependentUpon>Filling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\logoBmp.aspx.cs">
+      <DependentUpon>logoBmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFillier\logoBmp.aspx.designer.cs">
+      <DependentUpon>logoBmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\managecontacts.aspx.cs">
+      <DependentUpon>managecontacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFillier\managecontacts.aspx.designer.cs">
+      <DependentUpon>managecontacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFillier\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\resultXml.aspx.cs">
+      <DependentUpon>resultXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFillier\resultXml.aspx.designer.cs">
+      <DependentUpon>resultXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\TutorialWFE.aspx.cs">
+      <DependentUpon>TutorialWFE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFillier\TutorialWFE.aspx.designer.cs">
+      <DependentUpon>TutorialWFE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IThemeEditor.cs" />
+    <Compile Include="RemoteAccessPoint.asmx.cs">
+      <DependentUpon>RemoteAccessPoint.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\CssParser.cs" />
+    <Compile Include="ThemeEditor\CssUp.aspx.cs">
+      <DependentUpon>CssUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\CssUp.aspx.designer.cs">
+      <DependentUpon>CssUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\CssUpload.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>CssUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\CssUpload.aspx.designer.cs">
+      <DependentUpon>CssUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFillier\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="FormFillier\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="FormFillier\index.Master.cs">
+      <DependentUpon>index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="FormFillier\index.Master.designer.cs">
+      <DependentUpon>index.Master</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Auth\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeEditor\drawLogo.aspx.cs">
+      <DependentUpon>drawLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\drawLogo.aspx.designer.cs">
+      <DependentUpon>drawLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\SaveLogo.aspx.cs">
+      <DependentUpon>SaveLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\SaveLogo.aspx.designer.cs">
+      <DependentUpon>SaveLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\SaveTheme.aspx.cs">
+      <DependentUpon>SaveTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\SaveTheme.aspx.designer.cs">
+      <DependentUpon>SaveTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\customCss.cs" />
+    <Compile Include="ThemeEditor\CssEdit.aspx.cs">
+      <DependentUpon>CssEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\CssEdit.aspx.designer.cs">
+      <DependentUpon>CssEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeEditor\ThemeEditor.aspx.cs">
+      <DependentUpon>ThemeEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemeEditor\ThemeEditor.aspx.designer.cs">
+      <DependentUpon>ThemeEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowEditor\action\WFC_getAuthServiceList.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_LoadXmlDocFromSession.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_publishWorkflow.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_setProperties.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_getOperations.cs" />
+    <Compile Include="WorkflowEditor\action\IControlWorkflowEditor.cs" />
+    <Compile Include="WorkflowEditor\action\Pair.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_getPredicates.cs" />
+    <Compile Include="WorkflowEditor\action\WFC_syncNode.cs" />
+    <Compile Include="WorkflowEditor\action\WFE_saveWorkflow.cs" />
+    <Compile Include="WorkflowEditor\action\WFF_addField.cs" />
+    <Compile Include="WorkflowEditor\action\WFF_getConstraints.cs" />
+    <Compile Include="WorkflowEditor\action\WFF_saveConstraints.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_addArc.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_addNode.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_createWorkflow.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_finalNode.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_initialNode.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_removeArc.cs" />
+    <Compile Include="WorkflowEditor\action\WFG_removeNode.cs" />
+    <Compile Include="WorkflowEditor\ComunicationResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComunicationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowEditor\WorkflowEditor.aspx.cs">
+      <DependentUpon>WorkflowEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkflowEditor\WorkflowEditor.aspx.designer.cs">
+      <DependentUpon>WorkflowEditor.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comm\Comm.csproj">
+      <Project>{E1369789-E939-4AE1-99C7-48FF903D3A09}</Project>
+      <Name>Comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{3FD181BD-989C-43C8-B677-6EFCF44D335D}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fields\Fields.csproj">
+      <Project>{82EA06BB-A121-4414-A0E3-CAD28D383F4B}</Project>
+      <Name>Fields</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoginServices\LoginServices.csproj">
+      <Project>{F19A7E24-8C85-49BD-A0E6-A85272CD1BB8}</Project>
+      <Name>LoginServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{8E7C09F3-480F-4F5D-B1BE-89075D37F567}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Storage\Storage.csproj">
+      <Project>{9F0D9D14-3B48-43B4-BABD-3DE70C1CBC67}</Project>
+      <Name>Storage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormFillier\index.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WorkflowEditor\WorkflowEditor.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormFillier\index.Master">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Auth\httpslogin.aspx" />
+    <Content Include="CommWeb\back.png" />
+    <Content Include="CommWeb\bg-main2.jpg" />
+    <Content Include="CommWeb\logoScaledRss.png" />
+    <Content Include="CommWeb\Rss.css" />
+    <Content Include="CommWeb\RSSResult.aspx" />
+    <Content Include="CommWeb\ViewPublicationResult.aspx" />
+    <Content Include="FormFillier\Filling.aspx" />
+    <Content Include="FormFillier\logoBmp.aspx" />
+    <Content Include="FormFillier\managecontacts.aspx" />
+    <Content Include="FormFillier\Registration.aspx" />
+    <Content Include="FormFillier\resultXml.aspx" />
+    <Content Include="FormFillier\TutorialWFE.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="lib\css\FormFiller\CommWFEGui.css" />
+    <Content Include="lib\css\FormFiller\contentContacts.css" />
+    <Content Include="lib\css\FormFiller\contentRegistration.css" />
+    <Content Include="lib\css\FormFiller\dialogMaster.css" />
+    <Content Include="lib\css\FormFiller\dynamicContent.css" />
+    <Content Include="lib\css\FormFiller\floadingButton.css" />
+    <Content Include="lib\css\FormFiller\jsElement.css" />
+    <Content Include="lib\css\jquery.jgrowl.css" />
+    <Content Include="lib\css\jquery.popup.css" />
+    <Content Include="lib\css\jquery.tooltip.css" />
+    <Content Include="lib\css\WorkflowEditor\images\file.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\folder-closed.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\folder.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\minus.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\plus.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-black-line.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-black.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-default-line.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-default.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-famfamfam-line.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-famfamfam.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-gray-line.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-gray.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-red-line.gif" />
+    <Content Include="lib\css\WorkflowEditor\images\treeview-red.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\Copy of WFE_addNodeDraggableImage.png" />
+    <Content Include="lib\css\WorkflowEditor\img\resize-bar.png" />
+    <Content Include="lib\css\WorkflowEditor\img\WFE_addNodeDraggableImage.png" />
+    <Content Include="lib\css\WorkflowEditor\img\WFE_nodeDraggableImage.png" />
+    <Content Include="lib\css\WorkflowEditor\jquery.treeview.css" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\icon_new.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\Minus_button.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\Minus_button_disabled.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\Minus_button_hover.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\palette.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\Plus_button.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\Plus_button_hover.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\RadioButton.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\video_tutorial.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFE_button_clicked.png" />
+    <Content Include="lib\image\AddLogin.png" />
+    <Content Include="lib\image\back1.png" />
+    <Content Include="lib\image\backNode.png" />
+    <Content Include="lib\image\cestino10px.png" />
+    <Content Include="lib\image\checkNo.png" />
+    <Content Include="lib\image\checkYes.png" />
+    <Content Include="lib\image\Clear.png" />
+    <Content Include="lib\image\currentNode.png" />
+    <Content Include="lib\image\favicon.ico" />
+    <Content Include="lib\image\floading-button-center.png" />
+    <Content Include="lib\image\floading-button-clicked-center.png" />
+    <Content Include="lib\image\floading-button-clicked-left.png" />
+    <Content Include="lib\image\floading-button-clicked-right.png" />
+    <Content Include="lib\image\floading-button-disabled-center.png" />
+    <Content Include="lib\image\floading-button-disabled-left.png" />
+    <Content Include="lib\image\floading-button-disabled-right.png" />
+    <Content Include="lib\image\floading-button-hover-center.png" />
+    <Content Include="lib\image\floading-button-hover-left.png" />
+    <Content Include="lib\image\floading-button-hover-right.png" />
+    <Content Include="lib\image\floading-button-left.png" />
+    <Content Include="lib\image\floading-button-right.png" />
+    <Content Include="lib\image\forwardNode.png" />
+    <Content Include="lib\image\Home.png" />
+    <Content Include="lib\image\importContacts.jpg" />
+    <Content Include="lib\image\Modify32.png" />
+    <Content Include="lib\image\moveContacts.png" />
+    <Content Include="lib\image\myForms.png" />
+    <Content Include="lib\image\newedits.png" />
+    <Content Include="lib\image\ok.png" />
+    <Content Include="lib\image\publicForms.png" />
+    <Content Include="lib\image\removeContacts.png" />
+    <Content Include="lib\image\renamew.png" />
+    <Content Include="lib\image\Restart.png" />
+    <Content Include="lib\image\support-group-icon.gif" />
+    <Content Include="lib\js\examples\flora-close.png" />
+    <Content Include="lib\js\examples\flora-header.png" />
+    <Content Include="lib\js\examples\flora-notification.png" />
+    <Content Include="lib\js\examples\iphone.png" />
+    <Content Include="lib\js\examples\jgrowl-pool.html" />
+    <Content Include="lib\js\examples\jgrowl.html" />
+    <Content Include="lib\js\examples\jquery.ui.all.js" />
+    <Content Include="lib\js\examples\jtweet.html" />
+    <Content Include="lib\js\examples\sideways.html" />
+    <Content Include="lib\js\examples\smoke.png" />
+    <Content Include="lib\js\floadingButton.js" />
+    <Content Include="lib\js\FormFiller\AuthLogin.js" />
+    <Content Include="lib\js\FormFiller\CommWFEGui.js" />
+    <Content Include="lib\js\FormFiller\CommWFEGuiPW.js" />
+    <Content Include="lib\css\WorkflowEditor\WFE_css\EditorInterface.css" />
+    <Content Include="lib\css\WorkflowEditor\img\80ade5_40x100_textures_04_highlight_hard_100.png" />
+    <Content Include="lib\css\WorkflowEditor\img\D1E6FC_40x100_textures_10_dots_medium_90.png" />
+    <Content Include="lib\css\WorkflowEditor\img\d6d6d6_40x100_textures_02_glass_80%281%29.png" />
+    <Content Include="lib\css\WorkflowEditor\img\d6d6d6_40x100_textures_02_glass_80.png" />
+    <Content Include="lib\css\WorkflowEditor\img\eeeeee_40x100_textures_02_glass_90.png" />
+    <Content Include="lib\css\WorkflowEditor\img\go-dn-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\go-lt-off.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\go-lt-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\go-rt-off.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\go-rt-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\go-up-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\pin-dn-off.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\pin-dn-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\pin-up-off.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\pin-up-on.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\resizable-e.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\resizable-n.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\resizable-s.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\resizable-w.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\toggle-dn.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\toggle-lt.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\toggle-rt.gif" />
+    <Content Include="lib\css\WorkflowEditor\img\toggle-up.gif" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\buttonbg.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\dragicon.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFE_button.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFE_button_hover.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFE_button_opaque.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFF_close.png" />
+    <Content Include="lib\css\WorkflowEditor\WFG\WFG_graph.css" />
+    <Content Include="lib\image\arrowd.gif" />
+    <Content Include="lib\image\arrowu.gif" />
+    <Content Include="lib\image\floading.png" />
+    <Content Include="lib\image\go.png" />
+    <Content Include="lib\image\helpOK.png" />
+    <Content Include="lib\image\loading4.gif" />
+    <Content Include="lib\image\lock2.png" />
+    <Content Include="lib\image\login.png" />
+    <Content Include="lib\image\logoScaled.png" />
+    <Content Include="lib\image\logout.png" />
+    <Content Include="lib\image\managecontacts.png" />
+    <Content Include="lib\image\managefiles.png" />
+    <Content Include="lib\image\menu.png" />
+    <Content Include="lib\image\pause2.png" />
+    <Content Include="lib\image\pencil.png" />
+    <Content Include="lib\image\pencilInv.png" />
+    <Content Include="lib\image\play.png" />
+    <Content Include="lib\image\play1.png" />
+    <Content Include="lib\image\results1.png" />
+    <Content Include="lib\image\spinner.png" />
+    <Content Include="lib\image\statsOK.png" />
+    <Content Include="lib\js\animate.js" />
+    <Content Include="lib\js\FormFiller\Contacts.js" />
+    <Content Include="lib\js\FormFiller\ContactsManager\ContactsManager.js" />
+    <Content Include="lib\js\FormFiller\jshashtable.js" />
+    <Content Include="lib\js\FormFiller\masterJs.js" />
+    <Content Include="lib\js\FormFiller\ResultJs.js" />
+    <Content Include="lib\js\FormFiller\WorkflowJs.js" />
+    <Content Include="lib\js\jquery-ui-te.min.js" />
+    <Content Include="lib\js\jquery.jgrowl_compressed.js" />
+    <Content Include="lib\js\jquery.popup.js" />
+    <Content Include="lib\js\jquery.tooltip.min.js" />
+    <Content Include="lib\js\jquery.treeview.min.js" />
+    <Content Include="lib\js\spinner.js" />
+    <Content Include="lib\js\WorkflowEditor\WFB_buttons.js" />
+    <Content Include="lib\js\WorkflowEditor\WFF_groups.js" />
+    <Content Include="lib\js\WorkflowEditor\WFF_property_box.js" />
+    <Content Include="lib\js\WorkflowEditor\WFP_predicates.js" />
+    <Content Include="lib\js\WorkflowEditor\WFS_encoding.js" />
+    <Content Include="lib\js\WorkflowEditor\WFS_workflowStatus.js" />
+    <Content Include="RemoteAccessPoint.asmx" />
+    <Content Include="ThemeEditor\CssUp.aspx" />
+    <Content Include="Auth\login.aspx" />
+    <Content Include="lib\css\FormFiller\contentHome.css" />
+    <Content Include="lib\css\FormFiller\contentPresentation.css" />
+    <Content Include="lib\css\FormFiller\masterHome.css" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\applications.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\cancel.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\check.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\clock.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\email.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\info.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\lock.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\unlock.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\web.png" />
+    <Content Include="lib\css\WorkflowEditor\WFF_img\WFF_bg_grid_square.gif" />
+    <Content Include="lib\css\WorkflowEditor\WFF_widget_box_style.css" />
+    <Content Include="lib\image\bg-breadcrumb.jpg" />
+    <Content Include="lib\image\bg-breadcrumb1.jpg" />
+    <Content Include="lib\image\bg-curve-bottom-left.gif" />
+    <Content Include="lib\image\bg-curve-bottom-right.gif" />
+    <Content Include="lib\image\bg-curve-top-left.gif" />
+    <Content Include="lib\image\bg-main.jpg" />
+    <Content Include="lib\image\bg-main1.jpg" />
+    <Content Include="lib\image\bg-main2.JPG" />
+    <Content Include="lib\js\AnimeJ.js" />
+    <Content Include="lib\js\FormFiller\fillingHandler.js" />
+    <Content Include="lib\js\FormFiller\homeJs.js" />
+    <Content Include="lib\js\jquery.layout.min.js" />
+    <Content Include="lib\js\jQuery.tooltips.js" />
+    <Content Include="lib\js\raphael.js" />
+    <Content Include="lib\js\WorkflowEditor\WFE_cookies.js" />
+    <Content Include="lib\js\WorkflowEditor\WFE_Editor.js" />
+    <Content Include="lib\js\WorkflowEditor\WFF_widget_box.js" />
+    <Content Include="lib\js\WorkflowEditor\WFG_graphEditor.js" />
+    <Content Include="lib\js\WorkflowEditor\WFG_serverComunicationUtility.js" />
+    <Content Include="ThemeEditor\css\gccolor.css" />
+    <Content Include="ThemeEditor\css\themeEditor.css" />
+    <Content Include="ThemeEditor\drawLogo.aspx" />
+    <Content Include="ThemeEditor\lib\jquery.gccolor.js" />
+    <Content Include="ThemeEditor\lib\jquery.tools.min.js" />
+    <Content Include="ThemeEditor\logo.htm" />
+    <Content Include="ThemeEditor\resources\ajax-loader.gif" />
+    <Content Include="ThemeEditor\resources\check.png" />
+    <Content Include="ThemeEditor\resources\delete.gif" />
+    <Content Include="ThemeEditor\resources\iphone.png" />
+    <Content Include="ThemeEditor\resources\loader.gif" />
+    <Content Include="ThemeEditor\resources\loader2.gif" />
+    <Content Include="ThemeEditor\resources\pencil.png" />
+    <Content Include="ThemeEditor\resources\rock_paper_scissors_lizard_spock.jpg" />
+    <Content Include="ThemeEditor\resources\stop.png" />
+    <Content Include="ThemeEditor\resources\tabs-blue.png" />
+    <Content Include="ThemeEditor\SaveLogo.aspx" />
+    <Content Include="ThemeEditor\SaveTheme.aspx" />
+    <Content Include="ThemeEditor\css\tooltip.css" />
+    <Content Include="ThemeEditor\lib\jQuery.uploader.js" />
+    <Content Include="ThemeEditor\lib\propertylist.js" />
+    <Content Include="ThemeEditor\lib\themeeditor.js" />
+    <Content Include="ThemeEditor\ThemeEditor.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkflowEditor\ComunicationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ComunicationResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\js\examples\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ThemeEditor\tempLogo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49746</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

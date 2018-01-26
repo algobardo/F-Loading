@@ -1,0 +1,36 @@
+﻿.button
+{
+    border: solid thin;
+    color: White;
+    text-align: center;
+}
+
+.buttonNormal
+{
+    background-color: #AAAAFF;
+    border-right-color: #555555;
+    border-bottom-color: #555555;
+}
+.buttonOver
+{
+    background-color: #5555FF;
+    border-right-color: #555555;
+    border-bottom-color: #555555;
+}
+.buttonDown
+{
+    background-color: #5555FF;
+    border-left-color: #000000;
+    border-top-color: #000000;
+}
+.buttonUp
+{
+    background-color: #5555FF;
+    border-right-color: #555555;
+    border-bottom-color: #555555;
+}
+.ui-widget-header
+{
+    background: #828AD0 url('../../image/bg-main2.jpg') repeat-x !important;
+    color: white !important;
+}

@@ -1,0 +1,61 @@
+#popup_bg {
+  display: none;
+  position: fixed;
+  _position: absolute; /* hack for internet explorer 6 */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 1px solid #cecece;
+  z-index: 10;
+}
+
+#popup_title 
+{
+  font-family: 'Comic Sans MS';
+  font-size: medium;
+  color: #ffffff;
+  padding-left: 3px;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  width: 350px;  
+  _position: absolute; /* hack for internet explorer 6 */
+  /* background: #cccccc; 
+  */
+  background: #828AD0;background: url('../image/bg-main2.jpg') repeat;
+  z-index: 20;
+  padding: 2px;   /*same as rounding */
+}
+
+#popup_message {
+  padding: 15px;
+  /*background: #D08A82;*/
+  font-family: 'Comic Sans MS';
+  font-size: medium;
+  /*testo rosso su sfondo bianco e titolo blu*/
+  background:#ffffff;
+  color: #ff5555;
+  /*testo nero su sfondo rosso e titolo grigio*/
+  /*background: #ff5555;
+  color: #000000;*/
+  
+  
+  text-align: center;
+  /*min-height: 120px;*/
+}
+
+#popup_close {
+  width: 14px;
+  height: 14px;
+  /*background: url('close-off.png') no-repeat;*/
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+#popup_close:hover {
+  /*background: url('close.png') no-repeat;*/
+}

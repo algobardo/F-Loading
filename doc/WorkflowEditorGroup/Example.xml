@@ -1,0 +1,342 @@
+﻿<WORKFLOW name="workflow_1">
+  <EDGES>
+    <EDGE from="workflow_1_node_1" to="workflow_1_node_2">
+      <PRECONDITIONS>
+        <AND>
+          <Greater>
+            <P0 type="operation">
+              <Length>
+
+                <P0 type="path">
+                  //workflow_1_node_1/Nome
+                </P0>
+              </Length>
+            </P0>
+            <P1 type="value">
+              <IntBox>
+                <Value>0</Value>
+              </IntBox>
+            </P1>
+          </Greater>
+          <Greater>
+            <P0 type="operation">
+              <Length>
+
+                <P0 type="path">
+                  //workflow_1_node_1/Cognome
+                </P0>
+              </Length>
+            </P0>
+            <P1 type="value">
+              <IntBox>
+                <Value>0</Value>
+              </IntBox>
+            </P1>
+          </Greater>
+        </AND>
+      </PRECONDITIONS>
+    </EDGE>
+    <EDGE from="workflow_1_node_2" to="workflow_1_node_3">
+      <PRECONDITIONS>
+        <AND>
+          <isChecked>
+            <P0 type="path">
+              //workflow_1_node_2/Fuori_Corso
+            </P0>
+          </isChecked>
+        </AND>
+      </PRECONDITIONS>
+    </EDGE>
+    <EDGE to="workflow_1_node_1"/>
+    <EDGE from="workflow_1_node_4"/>
+    <EDGE from="workflow_1_node_3"/>
+    <EDGE from="workflow_1_node_2" to="workflow_1_node_4">
+      <PRECONDITIONS/>
+    </EDGE>
+  </EDGES>
+  <NODES>
+    <workflow_1_node_1>
+      <SCHEMA>
+        <EXTENDEDTYPES>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox1">
+            <xs:complexContent mixed="false">
+              <xs:extension base="StringBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:string"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox2">
+            <xs:complexContent mixed="false">
+              <xs:extension base="StringBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:string"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="Calendar3">
+            <xs:complexContent mixed="false">
+              <xs:extension base="Calendar">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:date"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </EXTENDEDTYPES>
+        <NODETYPE>
+          <xs:complexType name="workflow_1_node_1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:sequence>
+              <xs:element name="Nome" type="StringBox1"/>
+              <xs:element name="Cognome" type="StringBox2"/>
+              <xs:element name="Data_di_Nascita" type="Calendar3"/>
+            </xs:sequence>
+          </xs:complexType>
+        </NODETYPE>
+      </SCHEMA>
+      <RENDERING name="Generalità" x="288.98332519531255" y="23.46666564941404" width="100" height="100">
+        <xs_complexType name="workflow_1_node_1">
+          <xs_sequence>
+            <TEXT>
+              <style>
+                <top>67</top>
+                <left>31</left>
+              </style>
+              <Value>Inserisci i tuoi dati:</Value>
+            </TEXT>
+            <xs_element name="Nome">
+              <style>
+                <top>117</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <xs_element name="Cognome">
+              <style>
+                <top>167</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <xs_element name="Data di Nascita">
+              <style>
+                <top>202</top>
+                <left>113</left>
+              </style>
+            </xs_element>
+          </xs_sequence>
+        </xs_complexType>
+      </RENDERING>
+    </workflow_1_node_1>
+    <workflow_1_node_2>
+      <SCHEMA>
+        <EXTENDEDTYPES>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox5">
+            <xs:complexContent mixed="false">
+              <xs:extension base="StringBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:string"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="StringBox6">
+            <xs:complexContent mixed="false">
+              <xs:extension base="StringBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:string"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="IntBox7">
+            <xs:complexContent mixed="false">
+              <xs:extension base="IntBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:integer"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="CheckBoxField9">
+            <xs:complexContent mixed="false">
+              <xs:extension base="CheckBoxField">
+                <xs:sequence>
+                  <xs:element default="false" name="Value" type="xs:boolean"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </EXTENDEDTYPES>
+        <NODETYPE>
+          <xs:complexType name="workflow_1_node_2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:sequence>
+              <xs:element name="Universita" type="StringBox5"/>
+              <xs:element name="Corso_di_Laurea" type="StringBox6"/>
+              <xs:element name="Anno_di_iscrizione" type="IntBox7"/>
+              <xs:element name="Fuori_Corso" type="CheckBoxField9"/>
+            </xs:sequence>
+          </xs:complexType>
+        </NODETYPE>
+      </SCHEMA>
+      <RENDERING name="Dati Università" x="299.70000000000005" y="164.36665954589841" width="150" height="150">
+        <xs_complexType name="workflow_1_node_2">
+          <xs_sequence>
+            <TEXT>
+              <style>
+                <top>67</top>
+                <left>31</left>
+              </style>
+              <Value>Inserisci i tuoi dati:</Value>
+            </TEXT>
+            <xs_element name="Universita">
+              <style>
+                <top>117</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <xs_element name="Corso di Laurea">
+              <style>
+                <top>167</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <xs_element name="Anno di iscrizione">
+              <style>
+                <top>217</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <TEXT>
+              <style>
+                <top>267</top>
+                <left>31</left>
+              </style>
+              <Value>Sei uno studente fuori corso?</Value>
+            </TEXT>
+            <xs_element name="Fuori Corso">
+              <style>
+                <top>301</top>
+                <left>65</left>
+              </style>
+            </xs_element>
+          </xs_sequence>
+        </xs_complexType>
+      </RENDERING>
+    </workflow_1_node_2>
+    <workflow_1_node_3>
+      <SCHEMA>
+        <EXTENDEDTYPES>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="IntBox10">
+            <xs:complexContent mixed="false">
+              <xs:extension base="IntBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:integer"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="IntBox12">
+            <xs:complexContent mixed="false">
+              <xs:extension base="IntBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:integer"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </EXTENDEDTYPES>
+        <NODETYPE>
+          <xs:complexType name="workflow_1_node_3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:sequence>
+              <xs:element name="Anni_Fuori_Corso" type="IntBox10"/>
+              <xs:element name="Numero_Esami" type="IntBox12"/>
+            </xs:sequence>
+          </xs:complexType>
+        </NODETYPE>
+      </SCHEMA>
+      <RENDERING name="Dati Fuori Corso" x="109.70000000000005" y="305.3666595458984" width="160" height="160">
+        <xs_complexType name="workflow_1_node_3">
+          <xs_sequence>
+            <xs_element name="Anni Fuori Corso">
+              <style>
+                <top>67</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+            <TEXT>
+              <style>
+                <top>117</top>
+                <left>31</left>
+              </style>
+              <Value>Inserisci il numero di esami da sostenere:</Value>
+            </TEXT>
+            <xs_element name="Numero Esami">
+              <style>
+                <top>167</top>
+                <left>31</left>
+              </style>
+            </xs_element>
+          </xs_sequence>
+        </xs_complexType>
+      </RENDERING>
+    </workflow_1_node_3>
+    <workflow_1_node_4>
+      <SCHEMA>
+        <EXTENDEDTYPES>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="CheckBoxField14">
+            <xs:complexContent mixed="false">
+              <xs:extension base="CheckBoxField">
+                <xs:sequence>
+                  <xs:element default="false" name="Value" type="xs:boolean"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+          <xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="IntBox15">
+            <xs:complexContent mixed="false">
+              <xs:extension base="IntBox">
+                <xs:sequence>
+                  <xs:element name="Value" type="xs:integer"/>
+                </xs:sequence>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </EXTENDEDTYPES>
+        <NODETYPE>
+          <xs:complexType name="workflow_1_node_4" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:sequence>
+              <xs:element name="Dottorando" type="CheckBoxField14"/>
+              <xs:element name="Durata_dottorato" type="IntBox15"/>
+            </xs:sequence>
+          </xs:complexType>
+        </NODETYPE>
+      </SCHEMA>
+      <RENDERING name="Dati Dottorato" x="459.70000000000005" y="301.3666595458984" width="140" height="140">
+        <xs_complexType name="workflow_1_node_4">
+          <xs_sequence>
+            <TEXT>
+              <style>
+                <top>67</top>
+                <left>31</left>
+              </style>
+              <Value>Sei un dottorando?</Value>
+            </TEXT>
+            <xs_element name="Dottorando">
+              <style>
+                <top>101</top>
+                <left>82</left>
+              </style>
+            </xs_element>
+            <xs_element name="Durata dottorato">
+              <style>
+                <top>144</top>
+                <left>51</left>
+              </style>
+            </xs_element>
+          </xs_sequence>
+        </xs_complexType>
+      </RENDERING>
+    </workflow_1_node_4>
+  </NODES>
+</WORKFLOW>

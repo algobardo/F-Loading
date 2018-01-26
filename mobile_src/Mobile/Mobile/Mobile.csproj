@@ -1,0 +1,362 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6403266F-F164-489B-AEF8-4DC3086565E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mobile</RootNamespace>
+    <AssemblyName>Mobile</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>Floading</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>GUI\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="Microsoft.WindowsMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.PocketOutlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsMobile.Status, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\CommunicationManager.cs" />
+    <Compile Include="Communication\CommunicationUtil.cs" />
+    <Compile Include="Communication\FormInfo.cs" />
+    <Compile Include="Communication\FormRequestInfo.cs" />
+    <Compile Include="Communication\NotificationReceiver.cs" />
+    <Compile Include="Fields\Base\BoolBox.cs" />
+    <Compile Include="Fields\Base\BoolBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Base\CalendarBox.cs" />
+    <Compile Include="Fields\Base\CalendarBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Base\EnumerationBox.cs" />
+    <Compile Include="Fields\Base\EnumerationBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Base\EnumerationBoxController.Designer.cs">
+      <DependentUpon>EnumerationBoxController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\Base\IntBox.cs" />
+    <Compile Include="Fields\Base\IntBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Base\RatingBox.cs" />
+    <Compile Include="Fields\Base\RatingBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Base\StringBox.cs" />
+    <Compile Include="Fields\Base\StringBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Group\ChoiceBox.cs" />
+    <Compile Include="Fields\Group\ChoiceBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Group\ChoiceBoxController.Designer.cs">
+      <DependentUpon>ChoiceBoxController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\Group\GroupBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Group\SequenceBoxController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\Group\SequenceBoxController.Designer.cs">
+      <DependentUpon>SequenceBoxController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormScreen.Designer.cs">
+      <DependentUpon>FormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NotificationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NotificationScreen.Designer.cs">
+      <DependentUpon>NotificationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language\ExceptionManager.cs" />
+    <Compile Include="Language\LocalizedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language\LocalizedForm.designer.cs">
+      <DependentUpon>LocalizedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language\ResourceManager.cs" />
+    <Compile Include="Settings\Configuration.cs" />
+    <Compile Include="Settings\ConfigurationHelper.cs" />
+    <Compile Include="Util\Controls\BackgroundedControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\FormInfoListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\IRoundedControl.cs" />
+    <Compile Include="Util\Controls\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\RoundedControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\StarRating.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\StarRating.designer.cs">
+      <DependentUpon>StarRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\StringMeasure.cs" />
+    <Compile Include="Fields\Field.cs" />
+    <Compile Include="Fields\FieldController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fields\FieldException.cs" />
+    <Compile Include="Fields\FieldFactory.cs" />
+    <Compile Include="Fields\FieldGroup.cs" />
+    <Compile Include="Fields\Group\GroupBox.cs" />
+    <Compile Include="Fields\Group\SequenceBox.cs" />
+    <Compile Include="GUI\HelpScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HelpScreen.Designer.cs">
+      <DependentUpon>HelpScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormFetchScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormFetchScreen.Designer.cs">
+      <DependentUpon>FormFetchScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NotificationHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="GUI\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\ProgressBar.designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormScreen.resx">
+      <DependentUpon>FormScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HelpScreen.resx">
+      <DependentUpon>HelpScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NotificationScreen.resx">
+      <DependentUpon>NotificationScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormFetchScreen.resx">
+      <DependentUpon>FormFetchScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language\LocalizedForm.resx">
+      <DependentUpon>LocalizedForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SettingsScreen.resx">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RecentScreen.resx">
+      <DependentUpon>RecentScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.it-IT.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GUI\SettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SettingsScreen.Designer.cs">
+      <DependentUpon>SettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Controls\BackgroundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\EnhancedControlHelper.cs" />
+    <Compile Include="Util\Controls\EnhancedGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\Controls\IBackgroundedControl.cs" />
+    <Compile Include="GUI\RecentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RecentScreen.Designer.cs">
+      <DependentUpon>RecentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Controls\BackgroundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\TabIndexGenerator.cs" />
+    <Compile Include="Util\WebUtility.cs" />
+    <Compile Include="Web References\floading\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow\NodeController.cs" />
+    <Compile Include="Workflow\WorkflowException.cs" />
+    <Compile Include="Workflow\WorkflowManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultBackground.jpg" />
+    <None Include="Resources\DefaultBackgroundDark.jpg" />
+    <Content Include="GUI\Icon.ico" />
+    <None Include="Resources\637px-Star_Ouro.svg.png" />
+    <None Include="Resources\637px-Star_Prata.svg.png" />
+    <Content Include="Resources\DeleteButton.jpg" />
+    <Content Include="Resources\DeleteButtonPressed.jpg" />
+    <None Include="Resources\InformationPanel.jpg" />
+    <None Include="Resources\MainBackground.jpg" />
+    <None Include="Resources\MainBackgroundWide.jpg" />
+    <None Include="Resources\LoginHeader.jpg" />
+    <None Include="Resources\info.jpg" />
+    <None Include="Resources\LoginH.jpg" />
+    <Content Include="Resources\NewButton.jpg" />
+    <Content Include="Resources\NewButtonPressed.jpg" />
+    <None Include="Resources\RecentFH.jpg" />
+    <None Include="Resources\SettingH.jpg" />
+    <None Include="Resources\RecentHeader.jpg" />
+    <None Include="app.config" />
+    <None Include="Resources\PrivateLoginPanel.jpg" />
+    <None Include="Resources\NotificationHeader.jpg" />
+    <None Include="Resources\SynchButton.jpg" />
+    <None Include="Resources\FormOpenedIcon.png" />
+    <None Include="Resources\FormNotifiedIcon.png" />
+    <None Include="Resources\FormDownloadedIcon.png" />
+    <None Include="Resources\PrivateUrlPanel.jpg" />
+    <None Include="Resources\SettingsButton.jpg" />
+    <None Include="Resources\RecentButton.jpg" />
+    <None Include="Resources\HelpButton.jpg" />
+    <None Include="Resources\ResultsButtonPressed.jpg" />
+    <None Include="Resources\PublicFormButtonPressed.jpg" />
+    <None Include="Resources\SettingsHeader.jpg" />
+    <None Include="Resources\ResultsButton.jpg" />
+    <None Include="Resources\PublicFormButton.jpg" />
+    <None Include="Resources\PrivateFormButtonPressed.jpg" />
+    <None Include="Resources\PrivateFormButton.jpg" />
+    <None Include="Resources\HelpHeader.jpg" />
+    <None Include="Web References\floading\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\floading\RemoteAccessPoint.disco" />
+    <None Include="Web References\floading\RemoteAccessPoint.wsdl" />
+    <None Include="Web References\floading\WorkflowInformations.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:49746/RemoteAccessPoint.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\floading\</RelPath>
+      <UpdateFromURL>http://localhost:49746/RemoteAccessPoint.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
